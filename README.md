@@ -15,3 +15,4 @@ TODO:
 - [ ] Add some realer-looking content (take some content from Aaron's notes)
 - [ ] Implement some actual styles
 - [ ] Figure out how to live reload after changes are made locally.
+- [ ] For different translated versions, ideally would parse markdown files for each language and spit content out into one template instead of having a bunch of different templates for each language. This shouldn't be too hard, just have to figure out the best way to do it.

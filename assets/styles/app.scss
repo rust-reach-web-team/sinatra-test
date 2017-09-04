@@ -1,0 +1,11 @@
+@import 'variables/colors';
+
+body {
+  background-color: $body-background-color;
+  color: $body-text-color;
+}
+
+.layout-header {
+  background-color: $layout-header-background-color;
+  color: $layout-header-text-color;
+}

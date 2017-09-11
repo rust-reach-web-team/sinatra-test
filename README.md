@@ -1,3 +1,7 @@
+# Setup
+**0.** It is assumed that you have Ruby installed - Ruby 2.4^
+**0.** gem install bundler and bundle install to run rake tasks
+
 # Sinatra Test App
 
 To run the app locally:

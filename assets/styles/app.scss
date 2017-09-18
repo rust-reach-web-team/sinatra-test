@@ -1,4 +1,7 @@
 @import 'variables/colors';
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+$min-width: 681px;
 
 body {
   background-color: $body-background-color;
@@ -6,6 +9,35 @@ body {
 }
 
 .layout-header {
+  @media (min-width: $min-width) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px #000000;
   background-color: $layout-header-background-color;
   color: $layout-header-text-color;
+
+  span {
+    padding: 1rem;
+  }
+}
+
+.header-logo {
+  @media (min-width: $min-width) {
+    order: 0;
+  }
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  order: -1;
 }

@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="styles/app.css">
 
 <div class="layout-header">
-  LEARN DEVELOP DISCUSS CONTRIBUTE WHY RUST? ENGLISH
+  <% @menu.each do |menu_item| %>
+    <span><%= menu_item %></span>
+  <% end %>
 </div>
 <%= yield %>

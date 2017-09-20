@@ -1,5 +1,5 @@
 # Setup
-**0.** It is assumed that you have Ruby installed - Ruby 2.4^
+**0.** It is assumed that you have Ruby installed and the version is >=Ruby 2.4
 **0.** gem install bundler and bundle install to run rake tasks
 
 # Sinatra Test App

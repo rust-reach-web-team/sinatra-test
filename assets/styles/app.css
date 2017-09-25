@@ -1,7 +1,70 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Cabin|Kalam|Roboto");
 body {
-  background-color: #C3D9DC;
+  background-color: #f0f8ff;
   color: #5A6978; }
+
+.body-container {
+  margin-top: 3rem;
+  padding: 1rem; }
+  @media (min-width: 681px) {
+    .body-container {
+      margin-top: 2rem;
+      padding: 2rem; } }
+  @media (min-width: 681px) {
+    .body-container .headline {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      align-items: center; }
+      .body-container .headline p, .body-container .headline h1 {
+        width: 50%; } }
+
+h1 {
+  font-family: 'Kalam', sans-serif;
+  color: #80422a; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between; }
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0; }
+  @media (min-width: 681px) {
+    .hamburger {
+      display: none; } }
+
+.hamburger-wrapper {
+  padding: .5rem; }
+
+@media (max-width: 681px) {
+  #menu-toggle {
+    display: none; } }
+
+input#menu-toggle {
+  display: none; }
+
+@media (max-width: 681px) {
+  #menu {
+    display: none; } }
+
+@media (min-width: 681px) {
+  .menu {
+    display: flex; }
+    .menu .browser {
+      align-self: center; }
+    .menu span {
+      align-self: center; } }
+
+@media (max-width: 681px) {
+  #menu-toggle:checked + #menu {
+    display: flex;
+    flex-direction: column; } }
 
 .layout-header {
   display: flex;
@@ -18,7 +81,7 @@ body {
   color: #FFFFFF; }
   @media (min-width: 681px) {
     .layout-header {
-      justify-content: space-around;
+      justify-content: space-evenly;
       flex-direction: row; } }
   .layout-header span {
     padding: 1rem; }
@@ -30,14 +93,14 @@ body {
         background-color: inherit; } }
 
 .header-logo {
+  padding: .5rem;
   width: 50px;
-  height: 50px;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-  order: -1; }
+  height: 50px; }
   @media (min-width: 681px) {
-    .header-logo {
-      order: 0;
-      margin-top: 0.1rem; } }
+    .header-logo.mobile {
+      display: none; } }
+  @media (max-width: 681px) {
+    .header-logo.browser {
+      display: none; } }
 
 /*# sourceMappingURL=app.css.map */

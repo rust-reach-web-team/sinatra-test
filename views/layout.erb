@@ -1,12 +1,25 @@
 <link rel="stylesheet" href="styles/app.css">
 
 <div class="layout-header">
-  <span>learn</span>
-  <span>develop</span>
-  <span>discuss</span>
-  <img class="header-logo" src="/images/rust-logo.png">
-  <span>contribute</span>
-  <span>why Rust?</span>
-  <span>English</span>
+  <label for="menu-toggle">
+    <div class="mobile-header">
+      <img class="header-logo mobile" src="/images/rust-logo.png">
+      <div class="hamburger-wrapper">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </div>
+  </label>
+  <input type="checkbox" id="menu-toggle"/>
+  <div id="menu" class="menu">
+    <span>learn</span>
+    <span>develop</span>
+    <span>discuss</span>
+    <img class="header-logo browser" src="/images/rust-logo.png">
+    <span>contribute</span>
+    <span>why Rust?</span>
+    <span>English</span>
+  </div>
 </div>
 <%= yield %>

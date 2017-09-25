@@ -1,5 +1,5 @@
 @import 'variables/colors';
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Kalam|Roboto');
 
 $min-width: 681px;
 
@@ -8,9 +8,96 @@ body {
   color: $body-text-color;
 }
 
+.body-container {
+  @media (min-width: $min-width) {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  margin-top: 3rem;
+  padding: 1rem;
+
+  .headline {
+    @media (min-width: $min-width) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      align-items: center;
+
+      p, h1 {
+        width: 50%;
+      }
+    }
+  }
+}
+
+h1 {
+  font-family: 'Kalam', sans-serif;
+  color: $body-title-color;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  @media (min-width: $min-width) {
+    display: none;
+  }
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.hamburger-wrapper {
+  padding: .5rem;
+}
+
+#menu-toggle {
+  @media (max-width: $min-width) {
+    display: none;
+  }
+}
+
+input#menu-toggle {
+  display: none;
+}
+
+#menu {
+  @media (max-width: $min-width) {
+    display: none;
+  }
+}
+
+.menu {
+  @media (min-width: $min-width) {
+    display: flex;
+
+    .browser {
+      align-self: center;
+    }
+
+    span {
+      align-self: center;
+    }
+  }
+}
+
+#menu-toggle:checked + #menu {
+  @media (max-width: $min-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .layout-header {
   @media (min-width: $min-width) {
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
   }
   display: flex;
@@ -41,13 +128,19 @@ body {
 }
 
 .header-logo {
-  @media (min-width: $min-width) {
-    order: 0;
-    margin-top: 0.1rem;
+  &.mobile {
+    @media (min-width: $min-width) {
+      display: none;
+    }
   }
+
+  &.browser {
+    @media (max-width: $min-width) {
+      display: none;
+    }
+  }
+
+  padding: .5rem;
   width: 50px;
   height: 50px;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-  order: -1;
 }

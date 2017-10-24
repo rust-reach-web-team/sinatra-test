@@ -1,8 +1,27 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Cabin");
 body {
-  background-color: #C3D9DC;
+  background-color: #F7F7F2;
   color: #5A6978; }
+
+h1 {
+  color: #4F000B; }
+
+h2 {
+  color: #3E000C; }
+
+h3 {
+  color: #F7934C; }
+
+p {
+  color: #F7F7F2; }
+
+a {
+  color: #F7F7F2; }
+
+button {
+  background-color: #F7934C;
+  color: #F7F7F2; }
 
 .layout-header {
   display: flex;
@@ -49,8 +68,30 @@ body {
 .img-container {
   align-items: center; }
 
+.icon {
+  height: 2em;
+  color: #5A6978; }
+
 .header-space {
   width: 100%;
   height: 75px; }
+
+.container {
+  width: 100%;
+  padding: 2%; }
+
+.intro-container {
+  padding: 10%; }
+
+.highlight-box {
+  background-color: #4F000B;
+  padding: 2%; }
+
+.secondary-highlight-box {
+  padding: 2%;
+  background-color: #3E000C; }
+
+.alternate-link {
+  color: #3E000C; }
 
 /*# sourceMappingURL=app.css.map */

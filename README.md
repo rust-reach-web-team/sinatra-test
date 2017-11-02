@@ -5,6 +5,6 @@ To run the app locally:
 1. Navigate to the URL listed (probably `localhost:4567`)
 1. To see "French" (not really French, just an example of how we might handle other languages), navigate to `localhost:4567?lang=fr`
 
-If you make any changes, you will need to quit the server with `Ctrl-c` and restart to see them.
+If you make any changes, all you will need to do is reload the page to see them.
 
 There's nothing "real" here yet, just a basic Sinatra skeleton.

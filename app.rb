@@ -1,4 +1,5 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 
 # this is how you set up a static assets folder in Sinatra
 # otherwise it defaults to `./public`

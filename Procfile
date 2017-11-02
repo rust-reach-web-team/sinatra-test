@@ -1,1 +1,1 @@
-rake server
+web: bundle exec rake server
